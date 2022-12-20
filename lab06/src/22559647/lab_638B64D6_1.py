@@ -11,8 +11,9 @@ class ClassManual:
         print("{} is now walking".format(self._name))
     def show_genome(self):
         print("{} DNA: {}".format(self._name, self.__dna) )
-    #def __cellsplit(self):
-       
+    def cellsplit(self):
+        print("Splitting cell per DNA {}.".format(self.__dna))
+        
 def main():
     obj_cat=ClassManual("Cat",4)
     obj_dog=ClassManual("Dog",4) 
@@ -30,7 +31,7 @@ def main():
     obj_cat.eat()
     obj_dog.walk()
     obj_human.show_genome()
-    #obj_human.__cellsplit
+    obj_human.cellsplit()
 
 if __name__ == "__main__":
     main()
